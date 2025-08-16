@@ -1,0 +1,23 @@
+
+body {
+    font-family: 'Arimo', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.container, .links, .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+.nav {
+    background-color: #333;
+    padding: 10px;
+}
