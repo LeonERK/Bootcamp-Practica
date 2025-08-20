@@ -1,19 +1,125 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarjeta de Usuario</title>
-    <link rel="stylesheet" href="css/tarjeta_style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="nav">
-        <div class="container">
-            <h1 class="Titulo"> perfil de usuario</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="css/perfil_style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="nav-bar">
+      <div class="container-bar">
+        <div class="logo">
+          <img src="img/logo.png" class="Logo" alt="Logo" />
         </div>
+        <h1 class="nav-title">Perfil de Usuario</h1>
+        <div class="menu">
+          <ul class="nav-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Mi Perfil</a></li>
+            <li><a href="#">Buscar Conexiones</a></li>
+            <li><button class="boton">Cerrar Sesion</button></li>
+          </ul>
+        </div>
+      </div>
     </div>
-</body>
+    <div class="main-content">
+      <div>
+        <div class="container">
+          <div class="top-bar">
+            <div class="foto-usuario">
+              <img
+                src="img/fuecoco-pokemon.jpg"
+                alt="Foto de Usuario"
+                style="width: 120px; height: 120px; object-fit: cover"
+              />
+            </div>
+            <h1 class="Titulo">Fuecoco</h1>
+            <p class="Subtitulo">Pokémon Fuegodrilo</p>
+            <p class="Subtitulo_2">Tipo: Fuego</p>
+            <p class="descripcion">
+              Fuecoco está basado en una cría de cocodrilo o caimán y en un
+              pimiento. Su cuerpo es de color rojo, su cara y la parte inferior
+              de su cuerpo son beige y sus ojos son negros. En su barriga y en
+              su cola tiene unas placas cuadradas de color amarillo y su cabeza
+              posee una especie de mechón de color amarillo. Sus patas
+              delanteras son pequeñas en comparación a las traseras, en estas
+              últimas un par de garras en cada una. Se trata un Pokémon bípedo.
+              Le gusta dormir sobre las rocas calientes, debido a que transforma
+              su calor en energía ígnea, esto tras absorberlo por las escamas
+              rectangulares que posee en su cuerpo.
+            </p>
+          </div>
+          <button class="boton">Editar Perfil</button>
+        </div>
+        <div class="Educacion">
+          <h2 class="Titulo">Educación</h2>
+          <p class="Educacion-texto">Nivel 5</p>
+          <p class="Educacion-texto">Ascuas - Placaje - Gruñido</p>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="Solicitud-Conexiones">
+          <h3 class="solicitudes">Solicitudes (2)</h3>
+          <ul class="Lista-Conexiones">
+            <li class="Item-Conexiones">
+              <span>
+                <img src="img/pilpliup.jpg" alt="Pipliup" class="Con-pfp" />
+                Pipliup
+              </span>
+              <span class="buttons">
+                <img src="img/accept-circle.png" alt="accept" class="icon" />
+                <img
+                  src="img/close-circle.png"
+                  alt="close"
+                  class="icon cerrar"
+                />
+              </span>
+            </li>
+            <li class="Item-Conexiones">
+              <span>
+                <img
+                  src="img/charmander.jpg"
+                  alt="Charmander"
+                  class="Con-pfp"
+                />
+                Charmander
+              </span>
+              <span class="buttons">
+                <img src="img/accept-circle.png" alt="accept" class="icon" />
+                <img
+                  src="img/close-circle.png"
+                  alt="close"
+                  class="icon cerrar"
+                />
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="connections-tab">
+          <h3 class="Solicitud-Conexiones-B">Connections (151+)</h3>
+          <ul class="connection-list">
+            <li class="connection-item1">
+              <img src="img/mudkip.png" alt="Mudkip" class="Con-pfp" />
+              Mudkip
+            </li>
+            <li class="connection-item1">
+              <img src="img/incineroar.png" alt="Incineroar" class="Con-pfp" />
+              Incineroar
+            </li>
+            <li class="connection-item1">
+              <img src="img/charizard.png" alt="Charizard" class="Con-pfp" />
+              Charizard
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
