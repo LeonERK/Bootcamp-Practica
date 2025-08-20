@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.Body-2 {
+  display: inline-block;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-left: 40px;
+}
+
+h1 {
+  background-color: black;
+  color: white;
+  height: 100px;
+  width: auto;
+  font-size: 1.3rem;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+.profile-tab {
+  border: 3px solid black;
+  border-radius: 10px;
+  height: 400px;
+  width: 300px;
+  margin: 125px 0 0 25px;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.img-profile {
+  height: 200px;
+  width: 200px;
+  border: 2px black;
+  border-style: solid;
+  border-radius: 50%;
+  margin-top: 75px;
+}
+
+.name-profile {
+  font-size: 1.3rem;
+  bottom: 2px;
+  margin-top: auto;
+}
+
+h2 {
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  top: 125px;
+  left: 800px;
+}
+
+.notificaciones {
+  height: 800px;
+  width: 1400px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.box {
+  border: 2px solid black;
+  border-radius: 5px;
+  height: 150px;
+  width: 800px;
+}
+
+.name-boxes {
+  font-size: 1.3rem;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.body-notis {
+  font-size: 1rem;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+#like1,
+#like2,
+#like3 {
+  right: 20px;
+  top: 20px;
+  background-color: rgb(229, 255, 0);
+  color: rgb(0, 0, 0);
+  height: 40px;
+  width: 80px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 0px solid black;
+  font-weight: bold;
+}
+
+#like-box1,
+#like-box2,
+#like-box3 {
+  font-size: 1rem;
+  right: 105px;
+  top: 25px;
+  margin-left: 600px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-left: 400px;
+}
