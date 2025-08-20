@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arimo", sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(167, 167, 167);
+  height: 100px;
+  width: 80%;
+  margin-left: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.search-text {
+  border-style: solid;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  color: rgb(173, 168, 168);
+  height: 30px;
+  width: 60%;
+  border: 2px rgb(0, 0, 0);
+  border-style: solid;
+}
+
+.titulo {
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+.Iniciar {
+  margin-right: 20px;
+  padding: 10px;
+  background-color: rgb(60, 167, 255);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container-1 {
+  height: 300px;
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border: 2px black;
+  border-style: solid;
+  position: absolute;
+  top: 120px;
+  left: 200px;
+  flex: 1;
+}
+
+.texto-1,
+.texto-2 {
+  color: black;
+  margin: 20px;
+  margin-left: 10px;
+}
+
+p {
+  margin: 10px;
+}
+
+.container-2 {
+  height: 300px;
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border: 2px black;
+  border-style: solid;
+  position: absolute;
+  top: 450px;
+  left: 200px;
+}
+
+.italic {
+  font-style: italic;
+  color: rgb(0, 0, 0);
+}
+
+.sidebar {
+  height: 200px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border: 2px black;
+  border-style: solid;
+  position: absolute;
+  top: 120px;
+  left: 60%;
+}
+
+.Sidebar-Pet {
+  margin: 20px;
+}
+
+.btn-1,
+.btn-2 {
+  background-color: rgb(228, 247, 124);
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px;
+  box-shadow: black 2px 2px 2px;
+}
+
+.btn-3 {
+  background-color: rgb(1, 151, 8);
+  color: white;
+  padding: 10px;
+  width: 250px;
+  cursor: pointer;
+  margin: 20px;
+  box-shadow: black 2px 2px 2px;
+}
