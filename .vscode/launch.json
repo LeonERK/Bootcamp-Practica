@@ -1,0 +1,35 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Aplicacion",
+            "request": "launch",
+            "mainClass": "Aplicacion",
+            "projectName": "Codeo_e8113d29"
+        },
+        {
+            "type": "java",
+            "name": "Aplicacion(1)",
+            "request": "launch",
+            "mainClass": "com.Aplicacion",
+            "projectName": "empresa_con_empleados"
+        },
+        {
+            "type": "java",
+            "name": "PeliculasYDirectoresApplication",
+            "request": "launch",
+            "mainClass": "com.leon.peliculas_y_directores.PeliculasYDirectoresApplication",
+            "projectName": "peliculas_y_directores"
+        }
+    ]
+}

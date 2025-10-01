@@ -1,0 +1,16 @@
+package com.leon.peliculas_y_directores;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.leon.peliculas_y_directores.Controladores.ControladorPeliculas;
+
+@SpringBootApplication
+public class PeliculasYDirectoresApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(PeliculasYDirectoresApplication.class, args);
+		
+
+	}
+
+}
