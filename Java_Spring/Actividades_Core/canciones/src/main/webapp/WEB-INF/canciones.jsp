@@ -27,5 +27,10 @@
         </c:forEach>
     </tbody>
     </table>
+    <div style="margin-top:16px;">
+        <a href="${pageContext.request.contextPath}/canciones/formulario/agregar">
+            <button type="button">Agregar Canción</button>
+        </a>
+    </div>
 </body>
 </html>
