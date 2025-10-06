@@ -20,8 +20,13 @@
         <form:errors path="titulo" cssClass="error" />
     </div>
     <div>
-        <label for="artista">Artista</label>
-        <form:input path="artista" id="artista" />
+        <label for="artistaId">Artista</label>
+        <select name="artistaId" id="artistaId" required>
+            <option value="" disabled selected>-- Selecciona un artista --</option>
+            <c:forEach var="a" items="${artistas}">
+                <option value="${a.id}">${a.nombre} ${a.apellido}</option>
+            </c:forEach>
+        </select>
         <form:errors path="artista" cssClass="error" />
     </div>
     <div>

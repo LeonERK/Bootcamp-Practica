@@ -12,15 +12,21 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import jakarta.validation.Valid;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.leon.canciones.modelos.cancion;
 import com.leon.canciones.servicios.ServiciosCanciones;
+import com.leon.canciones.modelos.Artista;
+import com.leon.canciones.servicios.ServicioArtistas;
 
 @Controller
 @RequestMapping("/canciones")
 public class ControladorCanciones {
     @Autowired
     private ServiciosCanciones serviciosCanciones;
+
+    @Autowired
+    private ServicioArtistas servicioArtistas;
 
     @GetMapping
     public String desplegarCanciones(Model model) {
@@ -41,15 +47,27 @@ public class ControladorCanciones {
         if (!model.containsAttribute("cancion")) {
             model.addAttribute("cancion", new cancion());
         }
+        model.addAttribute("artistas", servicioArtistas.obtenerTodosLosArtistas());
         return "agregarCancion";
     }
 
     @PostMapping("/procesa/agregar")
     public String procesarAgregarCancion(@Valid @ModelAttribute("cancion") cancion nuevaCancion,
-            BindingResult result) {
+            BindingResult result, Model model, @RequestParam(required = false) Long artistaId) {
+        if (artistaId == null) {
+            result.rejectValue("artista", "artista.requerido", "Debes seleccionar un artista");
+        }
         if (result.hasErrors()) {
+            model.addAttribute("artistas", servicioArtistas.obtenerTodosLosArtistas());
             return "agregarCancion";
         }
+        Artista artista = servicioArtistas.obtenerArtistaPorId(artistaId);
+        if (artista == null) {
+            result.rejectValue("artista", "artista.noExiste", "El artista seleccionado no existe");
+            model.addAttribute("artistas", servicioArtistas.obtenerTodosLosArtistas());
+            return "agregarCancion";
+        }
+        nuevaCancion.setArtista(artista);
         serviciosCanciones.agregarCancion(nuevaCancion);
         return "redirect:/canciones";
     }
