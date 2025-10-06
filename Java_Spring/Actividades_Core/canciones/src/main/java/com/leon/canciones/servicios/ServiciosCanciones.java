@@ -24,4 +24,18 @@ public class ServiciosCanciones {
     public cancion agregarCancion(cancion nuevaCancion) {
         return repositoriosCanciones.save(nuevaCancion);
     }
+
+    public cancion actualizaCancion(cancion cancionActualizada) {
+        if (cancionActualizada == null || cancionActualizada.getId() == null) {
+            return null;
+        }
+        return repositoriosCanciones.findById(cancionActualizada.getId()).map(existing -> {
+            existing.setTitulo(cancionActualizada.getTitulo());
+            existing.setArtista(cancionActualizada.getArtista());
+            existing.setAlbum(cancionActualizada.getAlbum());
+            existing.setGenero(cancionActualizada.getGenero());
+            existing.setIdioma(cancionActualizada.getIdioma());
+            return repositoriosCanciones.save(existing);
+        }).orElse(null);
+    }
 }

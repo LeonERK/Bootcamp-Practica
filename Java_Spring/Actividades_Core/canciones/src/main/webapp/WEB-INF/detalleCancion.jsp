@@ -12,6 +12,12 @@
         <p><strong>Álbum:</strong> ${cancion.album}</p>
         <p><strong>Género:</strong> ${cancion.genero}</p>
         <p><strong>Idioma:</strong> ${cancion.idioma}</p>
+        <div style="margin-top:12px;">
+            <a href="${pageContext.request.contextPath}/canciones/formulario/editar/${cancion.id}">
+                <button type="button">Editar Canción</button>
+            </a>
+        </div>
+        <hr/>
         <a href="${pageContext.request.contextPath}/canciones">Volver</a>
     </body>
 </html>
