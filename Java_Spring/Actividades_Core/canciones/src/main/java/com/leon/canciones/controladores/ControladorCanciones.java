@@ -77,4 +77,10 @@ public class ControladorCanciones {
         serviciosCanciones.actualizaCancion(cancionForm);
         return "redirect:/canciones";
     }
+
+    @PostMapping("/eliminar/{idCancion}")
+    public String procesarEliminarCancion(@PathVariable Long idCancion) {
+        serviciosCanciones.eliminaCancion(idCancion);
+        return "redirect:/canciones";
+    }
 }

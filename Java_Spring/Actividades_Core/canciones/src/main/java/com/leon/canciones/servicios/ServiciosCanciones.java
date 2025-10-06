@@ -38,4 +38,12 @@ public class ServiciosCanciones {
             return repositoriosCanciones.save(existing);
         }).orElse(null);
     }
+
+    public void eliminaCancion(Long id) {
+        if (id == null)
+            return;
+        if (repositoriosCanciones.existsById(id)) {
+            repositoriosCanciones.deleteById(id);
+        }
+    }
 }

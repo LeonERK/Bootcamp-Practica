@@ -17,6 +17,11 @@
                 <button type="button">Editar Canción</button>
             </a>
         </div>
+        <div style="margin-top:12px;">
+            <form method="post" action="${pageContext.request.contextPath}/canciones/eliminar/${cancion.id}";>
+                <button type="submit">Eliminar Canción</button>
+            </form>
+        </div>
         <hr/>
         <a href="${pageContext.request.contextPath}/canciones">Volver</a>
     </body>
